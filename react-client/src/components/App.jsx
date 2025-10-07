@@ -9,7 +9,7 @@ function App(){
     useEffect(() => {
         const api = async () => {
         try {
-            const response = await fetch(`${API_BASE}/hello/`);
+            const response = await fetch(`${API_BASE}/`);
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }
