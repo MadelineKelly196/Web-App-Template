@@ -2,14 +2,14 @@ import React, {useState, useEffect} from "react";
 
 function App(){
     //this api base will distinguish dev and prod
-    const API_BASE = import.meta.env.VITE_API_BASE;
+    const API_BASE = import.meta.env.VITE_API_BASE || "/express";
     //connect to the server and collect the data available
     const [data, setData] = useState(null);
     const [gotData, setGotData] = useState(false);
     useEffect(() => {
         const api = async () => {
         try {
-            const response = await fetch(`${API_BASE}/hello/`);
+            const response = await fetch(`${API_BASE}/`);
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }

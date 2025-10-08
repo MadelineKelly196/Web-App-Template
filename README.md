@@ -4,7 +4,7 @@ Web app template using docker, react, and node
 Note:
 For the docker-compose proper connection between dev and production three environment files should be created within the react-client folder:
  - .env
-     - VITE_EXPRESS_HOST_DEV
+     - VITE_EXPRESS_HOST
      - VITE_EXPRESS_PORT
  - .env.development
      - VITE_API_BASE
