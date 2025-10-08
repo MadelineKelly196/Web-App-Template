@@ -6,7 +6,7 @@ import path from "path";
 export async function getData() {
     const data = [
             {"id": 1, "message": "Hello World!"},
-            {"id": 2, "message": "From Node.js"}
+            {"id": 2, "message": "From the server!"}
         ];
     return data;
 }

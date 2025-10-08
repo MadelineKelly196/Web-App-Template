@@ -13,7 +13,7 @@ describe("GET /", () => {
     if (response.body.length > 0) {
       expect(response.body[0]).toHaveProperty("message");
       expect(response.body[0].message).toMatch(/Hello World!/);
-      expect(response.body[1].message).toMatch(/From Node.js/);
+      expect(response.body[1].message).toMatch(/From the server!/);
     }
   });
 });
